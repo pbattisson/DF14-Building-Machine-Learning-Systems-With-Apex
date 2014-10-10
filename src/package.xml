@@ -38,6 +38,11 @@
         <name>CustomLabels</name>
     </types>
     <types>
+        <members>Clustering_Run__c</members>
+        <members>Iteration__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
         <members>*</members>
         <name>StaticResource</name>
     </types>
