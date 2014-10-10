@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Clustering_Ids_Deserialize_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Clustering Ids Deserialize Error</shortDescription>
+        <value>There was an errors retrieving the Ids for the clustering run. Please try again and contact your system administrator if the problem persists.</value>
+    </labels>
+    <labels>
+        <fullName>No_Iterations_For_Run</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Iterations For Run</shortDescription>
+        <value>The selected clustering run has no iterations for processing available. Please try again with a different clustering run record.</value>
+    </labels>
+    <labels>
+        <fullName>No_JSON_Field</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No JSON Field</shortDescription>
+        <value>Requested records for clustering do not have a JSON field (require a field JSON__c).</value>
+    </labels>
+    <labels>
+        <fullName>Null_Standard_Controller_Playback</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Null Standard Controller Playback</shortDescription>
+        <value>You have attempted to view this page incorrectly. Please return to a clustering run record and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Null_Standard_Controller_Record_Playback</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Null Standard Controller Record Playback</shortDescription>
+        <value>No record has been specified for viewing the playback. Please return to a clustering run record and try again.</value>
+    </labels>
+</CustomLabels>

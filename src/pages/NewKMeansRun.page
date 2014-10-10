@@ -1,0 +1,46 @@
+<apex:page showHeader="true" sidebar="true" standardController="Clustering_Run__c" extensions="KMeansController">
+<apex:form >
+	<apex:pageBlock title="Create a new K-Means Clustering Run" mode="edit">
+		<apex:pageBlockSection title="Select Records" columns="2" >
+			
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel for="objectList" value="Object" />
+				<apex:selectList value="{!object_API_name}" id="objectList" size="1">
+					<apex:selectOptions value="{!objects}"/>
+					<apex:actionSupport event="onchange" reRender="count, fieldsPanel" action="{!getFields}"/>
+				</apex:selectList>
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel for="count" value="Records for processing" />
+				<apex:outputText id="count" value="{!count}" />
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel for="numClusters" value="Initial number of clusters" />
+				<apex:inputText id="numClusters" value="{!numClusters}" />
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel for="maxVal" value="Maximum Value" />
+				<apex:inputText id="maxVal" value="{!maxValue}" />
+			</apex:pageBlockSectionItem>
+		</apex:pageBlockSection>
+
+		<apex:outputPanel id="fieldsPanel"> 
+			<apex:pageBlockSection title="Fields" id="fields" collapsible="false" rendered="{!fieldNames.size > 0}" columns="1">
+			<apex:dataTable value="{!fieldNames}" var="field" id="fieldNames" cellpadding="5" rowClasses="odd,even" styleClass="tableClass">
+				<apex:column style="width:25px;">
+					<apex:facet name="header">&nbsp;</apex:facet>   	
+					<apex:inputCheckbox value="{!field.isSelected}"/>
+				</apex:column>
+				<apex:column style="max-width:250px; min-width:150px;">
+					<apex:facet name="header">Name</apex:facet>   	
+					<apex:outputText value="{!field.name}" />
+				</apex:column>
+			</apex:dataTable>
+			</apex:pageBlockSection>
+		</apex:outputPanel>
+		<apex:pageBlockButtons >
+			<apex:commandButton action="{!run}" value="Run" />
+		</apex:pageBlockButtons>
+	</apex:pageBlock>	
+</apex:form>
+</apex:page>
