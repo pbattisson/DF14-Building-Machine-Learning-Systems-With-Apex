@@ -3,19 +3,19 @@ private class KMeansIterationTest {
    static testmethod void testIteration() {
         // Initialize data
         List<Double> dataPt = new List<Double>{1,2,3};
-        Country__c c1 = new Country__c(Name = 'c1', json__c=JSON.serialize(dataPt));
+        Account c1 = new Account(Name = 'c1', json__c=JSON.serialize(dataPt));
         insert c1;
 
         dataPt = new List<Double>{2,3,4};
-        Country__c c2 = new Country__c(Name = 'c2', json__c=JSON.serialize(dataPt));
+        Account c2 = new Account(Name = 'c2', json__c=JSON.serialize(dataPt));
         insert c2;
         
         dataPt = new List<Double>{1,5,4};
-        Country__c c3 = new Country__c(Name = 'c3', json__c=JSON.serialize(dataPt));
+        Account c3 = new Account(Name = 'c3', json__c=JSON.serialize(dataPt));
         insert c3;
 
         dataPt = new List<Double>{3,7,4};
-        Country__c c4 = new Country__c(Name = 'c4', json__c=JSON.serialize(dataPt));
+        Account c4 = new Account(Name = 'c4', json__c=JSON.serialize(dataPt));
         insert c4;
 
 
