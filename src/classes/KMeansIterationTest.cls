@@ -1,3 +1,7 @@
+/**
+  * @author Jennifer Wyher
+  * @description This class is the test for the KMeansIteration batch apex class.
+  */
 @isTest
 private class KMeansIterationTest {
    static testmethod void testIteration() {

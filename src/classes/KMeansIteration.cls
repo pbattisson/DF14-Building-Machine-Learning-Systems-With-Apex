@@ -1,3 +1,9 @@
+/**
+  * @author Jennfier Wyher
+  * @description This class is where the main processing occurs for the runs. The batch job assigns each point to a 
+  *							 centroid and calculates a running total to build the average correctly. At the end of the process a 
+  *							 new iteraration is kicked off if needed.
+  */
 global class KMeansIteration implements Database.Batchable<sObject>, Database.Stateful {
 	
 	String query;  // get the records identified by the recordIds;

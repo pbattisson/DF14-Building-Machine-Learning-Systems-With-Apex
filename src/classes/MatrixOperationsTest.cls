@@ -1,3 +1,7 @@
+/**
+  * @author Paul Battisson
+  * @description Test class for the MatrixOperation class.
+  */
 @isTest
 private class MatrixOperationsTest {
 	

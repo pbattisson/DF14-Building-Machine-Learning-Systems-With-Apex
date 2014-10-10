@@ -1,3 +1,8 @@
+/**
+  * @author Paul Battisson
+  * @description This controller allows the retrieval of iteration data for display on the playback page.
+  *							 We use a remoting method to help improve overall performance on the page and reduce viewstate and heap.
+  */
 public with sharing class KMeansPlaybackController {
 	
 	public Id clusterId {get; private set;}

@@ -1,3 +1,8 @@
+/**
+  * @author Paul Battisson
+  * @description This controller allows us to create a new clustering run and 
+  *							 manages the instantiation of a new run and the associated batch processes for it to work.
+  */
 public with sharing class KMeansController {
 	private static transient Set<String> standard_objects = new Set<String>{'Account', 'Asset', 'Campaign', 'Case', 'Contact', 'Contract', 'Lead', 'Product', 'Quote'};
 	

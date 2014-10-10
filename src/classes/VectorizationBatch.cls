@@ -1,3 +1,8 @@
+/**
+  * @author Paul Battisson
+  * @description This class vectorizes a large number of records in a batch manner to enable efficient processing of
+  *							 large datasets. The vector is then stored on the json field of the object.
+  */
 global class VectorizationBatch implements Database.Batchable<sObject> {
 	
 	private String query;

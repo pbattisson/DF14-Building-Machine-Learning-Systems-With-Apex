@@ -1,3 +1,8 @@
+/**
+  * @author Paul Battisson
+  * @description This class allows the manipulation of matrices. Although not used greatly in this system 
+  *							 it details what operations should be possible with the system.
+  */
 public class MatrixOperations {
 
 	public static Matrix multiply(Matrix A, Matrix B) {

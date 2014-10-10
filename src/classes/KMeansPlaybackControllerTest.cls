@@ -1,3 +1,7 @@
+/**
+  * @author Paul Battisson
+  * @description Test class for the KMeansPlaybackController.
+  */
 @isTest
 private class KMeansPlaybackControllerTest {
 

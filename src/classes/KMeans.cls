@@ -1,4 +1,5 @@
 /**
+  * @author Paul Battisson, Jennfier Wyher
   *	@description This class has the single static method "runClustering" which should be used as an entry point 
   *				 to initialize a new clustering run on some data set.
   **/

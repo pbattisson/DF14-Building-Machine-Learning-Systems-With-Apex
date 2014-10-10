@@ -1,3 +1,7 @@
+/**
+  * @author Paul Battisson
+  * @description This is the test class for the KMeansController.
+  */
 @isTest
 private class KMeansControllerTest {
 	
